@@ -7,7 +7,7 @@
 1. Установите расширение **[Tampermonkey](https://www.tampermonkey.net/)** (Для Safari: **[UserScripts](https://apps.apple.com/app/userscripts/id1463298887 )**)
 2. **[«Установите Скрипт»](https://raw.githubusercontent.com/ilyhalight/voice-over-translation/master/vot.user.js)**
 
-## Версия для VM, FM, GM, AdGuard: **[Ссылка](https://raw.githubusercontent.com/ilyhalight/voice-over-translation/master/vot-cloudflare.user.js)**
+## Версия для VM, FM, GM, AdGuard, UserScripts: **[Ссылка](https://raw.githubusercontent.com/ilyhalight/voice-over-translation/master/vot-cloudflare.user.js)**
 ## Версия для терминала: **[Ссылка](https://github.com/ilyhalight/voice-over-translation/tree/master/vot-cli)**
 ## Подробнее о создание воркера для VM, FM, GM, AdGuard: **[Ссылка](https://github.com/mynovelhost/voice-over-translation/)**
 
