@@ -1,0 +1,66 @@
+{
+  "name": "voice-over-translation",
+  "version": "1.0.0",
+  "source": "src/index.js",
+  "author": "Toil",
+  "license": "MIT",
+  "description": "A small extension that adds a Yandex Browser video translation to other browsers",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilyhalight/voice-over-translation.git"
+  },
+  "keywords": [
+    "cli",
+    "vot",
+    "voice-over-translation"
+  ],
+  "devDependencies": {
+    "@toil/translate": "^1.0.3",
+    "@types/bun": "^1.1.14",
+    "browser-id3-writer": "^6.1.0",
+    "browserslist": "^4.24.2",
+    "enquirer": "^2.4.1",
+    "eslint": "^9.15.0",
+    "eslint-plugin-oxlint": "^0.11.1",
+    "eslint-webpack-plugin": "^4.2.0",
+    "globals": "^15.12.0",
+    "husky": "^9.1.7",
+    "lightningcss": "^1.28.2",
+    "lint-staged": "^15.2.10",
+    "npm-run-all2": "^7.0.1",
+    "oxlint": "^0.11.1",
+    "patch-package": "^8.0.0",
+    "postinstall-postinstall": "^2.1.0",
+    "prettier": "3.4.2",
+    "sass": "^1.81.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.2",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0",
+    "webpack-monkey": "^0.2.1"
+  },
+  "scripts": {
+    "test:ui": "webpack build -c .webpack/config.ui-test.js",
+    "build": "webpack build -c .webpack/webpack.config.js",
+    "build:min": "webpack build -c .webpack/webpack.config.js --env build_type=minify",
+    "build:all": "run-p build build:min",
+    "build:bun": "bun run build:all",
+    "dev": "webpack serve --node-env development",
+    "lint": "npx oxlint --ignore-path=.oxlintignore && npx eslint",
+    "prepare": "husky",
+    "gen:wiki": "bun run ./scripts/wiki-gen/index.js",
+    "l10n": "bun run ./scripts/l10n-tui/index.ts",
+    "localize": "bun run l10n",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "@vot.js/ext": "^2.1.2",
+    "@vot.js/shared": "^2.1.2",
+    "bowser": "^2.11.0",
+    "chaimu": "^1.0.3",
+    "lit": "^3.2.1",
+    "requestidlecallback-polyfill": "^1.0.2"
+  }
+}

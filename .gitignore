@@ -1,5 +1,14 @@
-backups/
+tests/utils.test.js
+
+dist/test-ui.user.js
+dist/*.txt
+
+src/localization/locales/generate_phrase.py
+src/localization/locales/regenerate_locales.py
+src/localization/locales/remove_phrase.py
+
 .vscode
+.pytest_cache
 
 # Logs
 logs
@@ -92,7 +101,8 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+dist/*.meta.js
+dist/*.proxy.user.js
 
 # Gatsby files
 .cache/
